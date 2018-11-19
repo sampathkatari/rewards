@@ -9,7 +9,7 @@
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/rewards-network.bna",
     "pretest": "npm run lint",
     "lint": "eslint .",
-    "test": "nyc mocha -t 0 test/*.js && cucumber-js"
+    "test": "nyc mocha -t 0 test/*.js && cucumber-js",
     "start": "nohup composer-rest-server -c admin@rewards-network -n never -w true > rest-server.out 2> rest-server.err &"
   },
   "keywords": [
